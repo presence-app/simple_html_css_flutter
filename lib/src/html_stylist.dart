@@ -124,8 +124,11 @@ class HTML {
   static RichText toRichText(BuildContext context, String htmlContent,
       {Function(dynamic)? linksCallback,
       Map<String, TextStyle>? overrideStyle,
-      TextStyle? defaultTextStyle}) {
+      TextStyle? defaultTextStyle,
+      TextAlign? textAlign,
+      }) {
     return RichText(
+      textAlign: TextAlign.left,
       text: toTextSpan(
         context,
         htmlContent,
