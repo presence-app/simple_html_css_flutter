@@ -128,7 +128,7 @@ class HTML {
       TextAlign? textAlign,
       }) {
     return RichText(
-      textAlign: TextAlign.left,
+      textAlign: textAlign ?? TextAlign.left,
       text: toTextSpan(
         context,
         htmlContent,
